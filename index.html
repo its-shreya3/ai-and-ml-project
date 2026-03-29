@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe with AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    
+    <div class="mode-selection">
+      <button id="pvp-btn" class="mode-btn">2 Players</button>
+      <button id="ai-btn" class="mode-btn active">vs Computer</button>
+    </div>
+
+    <div class="scoreboard">
+      <div>Player X: <span id="score-x">0</span></div>
+      <div>Player O: <span id="score-o">0</span></div>
+      <div>Draws: <span id="score-draw">0</span></div>
+    </div>
+
+    <div class="board" id="board">
+      <!-- Cells will be added by JavaScript -->
+    </div>
+
+    <div id="status" class="status">Player X's turn</div>
+
+    <div class="controls">
+      <button id="reset-btn">New Game</button>
+      <button id="restart-btn">Reset Scores</button>
+    </div>
+
+    <div class="difficulty">
+      <label>AI Difficulty: </label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard (Unbeatable)</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
